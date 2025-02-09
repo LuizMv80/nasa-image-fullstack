@@ -1,0 +1,13 @@
+2025-02-07 01:28:16 - ERROR - Validation error: [{'type': 'value_error', 'loc': ('body', 'phone_number'), 'msg': 'value is not a valid phone number', 'input': '553245435'}, {'type': 'string_too_short', 'loc': ('body', 'password'), 'msg': 'String should have at least 10 characters', 'input': 'xxx', 'ctx': {'min_length': 10}}, {'type': 'string_too_short', 'loc': ('body', 'confirm_password'), 'msg': 'String should have at least 10 characters', 'input': 'xxx', 'ctx': {'min_length': 10}}]
+2025-02-07 01:29:03 - ERROR - Validation error: [{'type': 'value_error', 'loc': ('body', 'phone_number'), 'msg': 'value is not a valid phone number', 'input': '553245435'}, {'type': 'string_too_short', 'loc': ('body', 'password'), 'msg': 'String should have at least 10 characters', 'input': 'xxx', 'ctx': {'min_length': 10}}, {'type': 'missing', 'loc': ('body', 'ConfirmPassword'), 'msg': 'Field required', 'input': {'confirmPassword': 'xxx', 'email': 'jhonson@xxxx.com', 'last_names': 'J.', 'names': 'Jhonson', 'password': 'xxx', 'phone_number': '553245435'}}]
+2025-02-07 01:29:22 - ERROR - Validation error: [{'type': 'value_error', 'loc': ('body', 'phone_number'), 'msg': 'value is not a valid phone number', 'input': '553245435'}, {'type': 'string_too_short', 'loc': ('body', 'password'), 'msg': 'String should have at least 10 characters', 'input': 'xxx', 'ctx': {'min_length': 10}}, {'type': 'string_too_short', 'loc': ('body', 'confirm_password'), 'msg': 'String should have at least 10 characters', 'input': 'xxx', 'ctx': {'min_length': 10}}]
+2025-02-07 01:39:37 - ERROR - (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'172.19.0.1' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-02-07 01:58:03 - ERROR - (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'172.19.0.1' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-02-07 02:02:23 - ERROR - (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'172.19.0.1' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-02-07 02:03:35 - ERROR - (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'172.19.0.1' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-02-07 02:03:36 - ERROR - Error ocurrido: DataBase ERROR. Access denied for user 'root'@'172.19.0.1' (using password: YES)
+2025-02-07 02:06:10 - ERROR - Error ocurrido: 'confirm_password' is an invalid keyword argument for PostUser

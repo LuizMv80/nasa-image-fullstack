@@ -1,0 +1,1 @@
+2025-02-09 00:39:22 - ERROR - Validation error: [{'type': 'missing', 'loc': ('body', 'Uuid'), 'msg': 'Field required', 'input': {'names': 'Luiz', 'email': 'luizmv80@gmail.com', 'last_names': 'Mayorga', 'phone_number': '5521387599'}}]

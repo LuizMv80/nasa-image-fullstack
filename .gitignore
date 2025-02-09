@@ -1,0 +1,6 @@
+./nasa-images-frontend/node_modules
+./nasa-images-frontend/.env
+./nasa-images-backend/logs
+./nasa-images-backend/venv
+./nasa-images-backend/.env
+./docker-compose.yml
