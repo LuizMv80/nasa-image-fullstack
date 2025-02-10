@@ -75,6 +75,12 @@ html, body {
   }
 }
 
+@media (prefers-color-schema: dark), (prefers-color-schema: light) {
+  :root {
+      color-scheme: dark;
+  }
+}
+
 .MuiOutlinedInput-notchedOutline .MuiOutlinedInput-notchedOutline {
   border-color: transparent;
 }
