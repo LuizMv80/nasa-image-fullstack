@@ -66,8 +66,8 @@ class PutUserEntitie(BaseModel):
 
 
 class UserEntitie(BaseModel):
-    uuid: UUID4
-    rol: UUID4
+    uuid: str
+    rol: str
     names: str
     last_names: str
     email: str

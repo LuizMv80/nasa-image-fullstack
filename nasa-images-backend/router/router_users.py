@@ -44,8 +44,6 @@ def get_user_router(
     """
     response = get_user(user_data['uuid'], db)
     user_dict = response.model_dump()
-    user_dict['uuid'] = str(user_dict['uuid'])
-    user_dict['rol'] = str(user_dict['rol'])
     user_dict['phone_number'] = user_dict['phone_number'][3:]
     return JSONResponse(content={'detail': user_dict}, status_code=200)
 

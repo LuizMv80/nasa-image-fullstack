@@ -20,7 +20,7 @@ def auth_user(entry: dict, db: Session) -> str:
 def createPayload(user: PostUser) -> dict:
     payload = {}
     payload['uuid'] = user.uuid
-    payload['rol'] = str(user.rol)
+    payload['rol'] = user.rol
     payload['names'] = user.names
     payload['last_names'] = user.last_names
     payload['phone_number'] = user.phone_number

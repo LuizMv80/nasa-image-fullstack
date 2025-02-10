@@ -15,7 +15,8 @@ def post_user(entry: dict, db: Session) -> str:
     if result:
         raise HTTPException(status_code=404, detail=f'This user already exists.')
     entry['password'] = hash_password(entry['password'])
-    entry['uuid'] = str(uuid.uuid4().bytes)
+    entry['uuid'] = str(uuid.uuid4())
+    entry['rol'] = 'b9697d6c-00f9-4e76-b6b5-7c60b135f17d'
     new_user = PostUser(**entry)
     return create(db, new_user)
 

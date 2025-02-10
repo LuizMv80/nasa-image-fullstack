@@ -19,6 +19,14 @@ export const passwordValidate = {
     pattern: {
         value: /^(?=.*[A-Z])(?=.*\d)(?=.).{8,15}$/,
         message: 'Password is invalid. Make sure the password contains at least one uppercase letter and one numeric character.'
+    },
+    minLength: {
+        value: 8,
+        message: 'Password must be at least 5 characters.'
+      },
+      maxLength: {
+        value: 15,
+        message: 'Password cannot exceed 50 characters.'
     }
 }
 
