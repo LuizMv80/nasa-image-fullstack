@@ -10,6 +10,7 @@ export const GridContent = styled('div')`
     height: 100vh;
     flex-direction: column;
     overflow: hidden;
+    overflow-y: scroll;
     background-image: url('https://images.pexels.com/photos/7166814/pexels-photo-7166814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-size: cover;
     background-position: center;
@@ -32,6 +33,7 @@ export const GridLogin = styled('div')`
     @media (max-width: ${breakpoints.values.sm}px) {
         justify-content: center;
         align-items: center;
+        width: auto;
     }
 
     @media (min-width: ${breakpoints.values.sm +

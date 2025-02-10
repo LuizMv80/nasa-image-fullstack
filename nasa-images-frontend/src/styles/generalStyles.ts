@@ -1,4 +1,5 @@
 import { styled, TextField, Typography } from "@mui/material";
+import breakpoints from "./breakpoints";
 
 
 export const Title = styled('h1')`
@@ -7,6 +8,17 @@ export const Title = styled('h1')`
     margin: 0;
     font-size: xx-large;
     margin: 2rem 0rem;
+
+    @media (max-width: ${breakpoints.values.sm}px) {
+        font-size: large;
+        text-align: center;
+    }
+
+    @media (min-width: ${breakpoints.values.sm +
+        1}px) and (max-width: ${breakpoints.values.md}px) {
+        font-size: x-large;
+        text-align: center;
+    }
 `;
 
 export const Text = styled('p')`
@@ -14,6 +26,16 @@ export const Text = styled('p')`
     font-weight: bold;
     margin: 0;
     font-size: medium;
+
+    @media (max-width: ${breakpoints.values.sm}px) {
+        font-size: small;
+        text-align: center;
+    }
+
+    @media (min-width: ${breakpoints.values.sm +
+        1}px) and (max-width: ${breakpoints.values.md}px) {
+        text-align: center;
+    }
 `;
 
 export const SmallText = styled(Typography)`
@@ -22,11 +44,30 @@ export const SmallText = styled(Typography)`
     font-size: small;
     text-align: center;
     margin-bottom: 1rem;
+
+    @media (max-width: ${breakpoints.values.sm}px) {
+        font-size: x-small;
+        text-align: center;
+    }
+
+    @media (min-width: ${breakpoints.values.sm +
+        1}px) and (max-width: ${breakpoints.values.md}px) {
+        text-align: center;
+    }    
 `;
 
 export const XSmallText = styled(SmallText)`
     font-size: x-small;
     text-align: center;
+
+    @media (max-width: ${breakpoints.values.sm}px) {
+        font-size: xx-small;
+        text-align: center;
+    }
+    @media (min-width: ${breakpoints.values.sm +
+        1}px) and (max-width: ${breakpoints.values.md}px) {
+        text-align: center;
+    }   
 `;
 
 export const ErrorText = styled(XSmallText)`
@@ -47,6 +88,10 @@ export const Input = styled(TextField) `
     &:focus {
         outline: none;
         border: 2px solid #888888;
+    }
+
+    @media (max-width: ${breakpoints.values.sm}px) {
+        height: 30px;
     }
 `;
 

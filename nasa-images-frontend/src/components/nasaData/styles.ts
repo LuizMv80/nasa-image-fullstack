@@ -1,5 +1,6 @@
 import { styled } from "@mui/material";
 import { SmallText, Text, Title } from "../../styles/generalStyles";
+import breakpoints from "../../styles/breakpoints";
 
 
 export const ContainerImages = styled('div')`
@@ -27,10 +28,12 @@ export const GridImage = styled('div')`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+
+    width: -webkit-fill-available;
+
     flex-direction: column;
     overflow: visible;
-    height: 100vh;
+  
     padding-top: 5rem;
     background-image: url('https://images.pexels.com/photos/1694000/pexels-photo-1694000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-size: cover;
@@ -61,6 +64,10 @@ export const GridHeader = styled('div')`
         100% {
         transform: rotate(2deg);
         }
+    }
+
+    @media (max-width: ${breakpoints.values.sm}px) {
+        padding: 1rem 2rem;
     }
 `;
 

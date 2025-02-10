@@ -1,4 +1,5 @@
 import { styled } from '@mui/material';
+import breakpoints from '../../styles/breakpoints';
 
 export const GridCard = styled('div')`
     display: flex;
@@ -13,4 +14,11 @@ export const GridCard = styled('div')`
     opacity: 0;
     transition: opacity 1.3s ease-in, transform 0.3s ease-in-out;
 
+
+    @media (max-width: ${breakpoints.values.sm}px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: min-content;
+    }
 `;
