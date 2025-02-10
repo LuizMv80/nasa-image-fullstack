@@ -87,6 +87,10 @@ Se recomienda utilizar un entorno virtual para gestionar las dependencias del pr
 4. installa las librerías necesarias para que corra el proyecto
 
   `pip install requirements.txt`
+
+  5. crea una carpeta llamada static en la raiz del proyecto backend
+
+     `mkdir satatic`
   
 6. Configura tu archivo .env con las variables de entorno indicadas en dicho archivo
 7. Corre el proyecto
