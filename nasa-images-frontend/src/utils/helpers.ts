@@ -22,11 +22,11 @@ export const passwordValidate = {
     },
     minLength: {
         value: 8,
-        message: 'Password must be at least 5 characters.'
+        message: 'Password must be at least 8 characters.'
       },
       maxLength: {
         value: 15,
-        message: 'Password cannot exceed 50 characters.'
+        message: 'Password cannot exceed 15 characters.'
     }
 }
 
